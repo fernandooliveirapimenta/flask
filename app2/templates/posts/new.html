@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<form action="{{ url_for('posts.create') }}" method="post">
+
+    <input type="text" name="title">
+    <br>
+    <textarea name="body"></textarea>
+
+    <input type="submit" value="Salvar">
+
+</form>
+{% endblock %}
+
